@@ -1,0 +1,45 @@
+{
+  "name": "mcbride-creative-theme",
+  "version": "1.0.0",
+  "description": "Custom WordPress block theme for McBride Creative - Professional marketing design for community theatre",
+  "author": "Jason McBride",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "block-theme",
+    "gutenberg",
+    "mcbride-creative",
+    "theatre",
+    "marketing"
+  ],
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^12.0.0",
+    "@wordpress/blocks": "^12.0.0",
+    "@wordpress/components": "^25.0.0",
+    "@wordpress/data": "^9.0.0",
+    "@wordpress/element": "^5.0.0",
+    "@wordpress/i18n": "^4.0.0",
+    "@wordpress/server-side-render": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

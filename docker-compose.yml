@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # WordPress Service
+  wordpress:
+    image: wordpress:latest
+    container_name: mcbride-creative-wp
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: mcbride_creative
+      WORDPRESS_DEBUG: 1
+    volumes:
+      - ./wordpress-data:/var/www/html
+      - ./mcbride-creative-theme:/var/www/html/wp-content/themes/mcbride-creative-theme
+    depends_on:
+      - db
+    restart: always
+
+  # MySQL Database Service
+  db:
+    image: mysql:8.0
+    container_name: mcbride-creative-db
+    environment:
+      MYSQL_DATABASE: mcbride_creative
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db-data:/var/lib/mysql
+    restart: always
+
+  # phpMyAdmin (Optional - for database management)
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: mcbride-creative-phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: rootpassword
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  db-data:

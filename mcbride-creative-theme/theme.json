@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "color": {
+      "custom": true,
+      "defaultPalette": false,
+      "palette": [
+        {"slug": "black", "color": "#0A0A0A", "name": "Deep Black"},
+        {"slug": "white", "color": "#FFFFFF", "name": "Pure White"},
+        {"slug": "accent", "color": "#FF3B30", "name": "Vivid Red"},
+        {"slug": "grey-50", "color": "#FAFAFA", "name": "Lightest Grey"},
+        {"slug": "grey-100", "color": "#F5F5F5", "name": "Light Grey"},
+        {"slug": "grey-200", "color": "#E5E5E5", "name": "Medium Grey"},
+        {"slug": "grey-800", "color": "#1F1F1F", "name": "Dark Grey"},
+        {"slug": "grey-900", "color": "#121212", "name": "Almost Black"}
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {"slug": "xs", "size": "0.75rem", "name": "Extra Small"},
+        {"slug": "sm", "size": "0.875rem", "name": "Small"},
+        {"slug": "base", "size": "1rem", "name": "Base"},
+        {"slug": "lg", "size": "1.125rem", "name": "Large"},
+        {"slug": "xl", "size": "1.25rem", "name": "Extra Large"},
+        {"slug": "2xl", "size": "1.5rem", "name": "2X Large"},
+        {"slug": "3xl", "size": "1.875rem", "name": "3X Large"},
+        {"slug": "4xl", "size": "2.25rem", "name": "4X Large"},
+        {"slug": "5xl", "size": "3rem", "name": "5X Large"},
+        {"slug": "6xl", "size": "3.75rem", "name": "6X Large"},
+        {"slug": "7xl", "size": "4.5rem", "name": "7X Large"},
+        {"slug": "8xl", "size": "6rem", "name": "8X Large"}
+      ],
+      "fontFamilies": [
+        {"slug": "display", "fontFamily": "\"Inter\", system-ui, -apple-system, sans-serif", "name": "Display"},
+        {"slug": "body", "fontFamily": "\"Inter\", system-ui, -apple-system, sans-serif", "name": "Body"}
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        {"slug": "1", "size": "0.25rem", "name": "1"},
+        {"slug": "2", "size": "0.5rem", "name": "2"},
+        {"slug": "3", "size": "0.75rem", "name": "3"},
+        {"slug": "4", "size": "1rem", "name": "4"},
+        {"slug": "5", "size": "1.25rem", "name": "5"},
+        {"slug": "6", "size": "1.5rem", "name": "6"},
+        {"slug": "8", "size": "2rem", "name": "8"},
+        {"slug": "10", "size": "2.5rem", "name": "10"},
+        {"slug": "12", "size": "3rem", "name": "12"},
+        {"slug": "16", "size": "4rem", "name": "16"},
+        {"slug": "20", "size": "5rem", "name": "20"},
+        {"slug": "24", "size": "6rem", "name": "24"},
+        {"slug": "32", "size": "8rem", "name": "32"}
+      ]
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1280px"
+    }
+  },
+  "styles": {
+    "color": {"background": "#FFFFFF", "text": "#0A0A0A"},
+    "typography": {"fontFamily": "var(--wp--preset--font-family--body)", "fontSize": "1.125rem", "lineHeight": "1.7", "fontWeight": "400"},
+    "spacing": {"padding": {"top": "0", "right": "clamp(1rem, 5vw, 3rem)", "bottom": "0", "left": "clamp(1rem, 5vw, 3rem)"}},
+    "elements": {
+      "h1": {"typography": {"fontFamily": "var(--wp--preset--font-family--display)", "fontSize": "clamp(2.5rem, 8vw, 6rem)", "fontWeight": "700", "lineHeight": "1.1", "letterSpacing": "-0.02em"}},
+      "h2": {"typography": {"fontFamily": "var(--wp--preset--font-family--display)", "fontSize": "clamp(2rem, 6vw, 4.5rem)", "fontWeight": "700", "lineHeight": "1.15", "letterSpacing": "-0.01em"}},
+      "h3": {"typography": {"fontFamily": "var(--wp--preset--font-family--display)", "fontSize": "clamp(1.5rem, 4vw, 3rem)", "fontWeight": "600", "lineHeight": "1.2"}},
+      "link": {"color": {"text": "#FF3B30"}, ":hover": {"color": {"text": "#0A0A0A"}}},
+      "button": {"color": {"background": "#0A0A0A", "text": "#FFFFFF"}, "typography": {"fontSize": "1rem", "fontWeight": "500"}, "spacing": {"padding": {"top": "1rem", "right": "2rem", "bottom": "1rem", "left": "2rem"}}, "border": {"radius": "0"}, ":hover": {"color": {"background": "#FF3B30"}}}
+    }
+  }
+}

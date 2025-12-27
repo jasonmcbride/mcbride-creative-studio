@@ -1,0 +1,477 @@
+/**
+ * McBride Creative - Award-Winning 2025 Design
+ * This overrides everything and creates a stunning modern aesthetic
+ */
+
+/* ==================== CRITICAL RESETS ==================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0 !important;
+  padding: 80px 0 0 0 !important;
+  background: #FAFAFA !important;
+  color: #0A0A0A !important;
+  font-family: "Inter", -apple-system, system-ui, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  overflow-x: hidden;
+}
+
+/* ==================== STUNNING HEADER ==================== */
+.site-header,
+header.wp-block-group {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  padding: 1rem clamp(2rem, 5vw, 4rem) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.site-header .wp-block-site-title {
+  margin: 0 !important;
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.site-header .wp-block-site-title a {
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.site-header .wp-block-site-title a:hover {
+  color: #FF3B30 !important;
+}
+
+/* Navigation Links */
+.site-header .wp-block-navigation,
+.site-header .wp-block-navigation__responsive-container {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+
+.site-header .wp-block-navigation__container {
+  gap: 0.5rem !important;
+}
+
+.site-header .wp-block-navigation a,
+.site-header .wp-block-navigation-item a {
+  color: #0A0A0A !important;
+  text-decoration: none !important;
+  padding: 0.625rem 1.125rem !important;
+  border-radius: 8px !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  display: inline-block !important;
+  font-weight: 500 !important;
+}
+
+.site-header .wp-block-navigation a:hover,
+.site-header .wp-block-navigation-item a:hover {
+  background: rgba(255, 59, 48, 0.1) !important;
+  color: #FF3B30 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Active/Current Page */
+.site-header .current-menu-item a,
+.site-header .wp-block-navigation-item.current-menu-item a {
+  background: rgba(10, 10, 10, 0.04) !important;
+  font-weight: 600 !important;
+}
+
+/* ==================== MASSIVE HERO TYPOGRAPHY ==================== */
+h1, .wp-block-heading,
+.has-gigantic-font-size,
+.has-huge-font-size {
+  font-family: "Inter", -apple-system, system-ui, sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.04em !important;
+  line-height: 1 !important;
+  margin: 0 0 2rem 0 !important;
+  color: #0A0A0A !important;
+}
+
+h1,
+.has-gigantic-font-size {
+  font-size: clamp(3rem, 12vw, 8rem) !important;
+}
+
+h2,
+.has-huge-font-size,
+.has-6-xl-font-size {
+  font-size: clamp(2rem, 8vw, 5rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.1 !important;
+}
+
+h3,
+.has-xx-large-font-size,
+.has-3-xl-font-size {
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.2 !important;
+}
+
+p {
+  margin: 0 0 1.5rem 0 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.8 !important;
+  color: #2A2A2A !important;
+}
+
+/* ==================== STUNNING BUTTONS ==================== */
+.wp-block-button__link,
+.wp-element-button,
+a.wp-block-button__link {
+  background: #0A0A0A !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 1.125rem 2.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(10, 10, 10, 0.15) !important;
+}
+
+.wp-block-button__link:hover,
+.wp-element-button:hover,
+a.wp-block-button__link:hover {
+  background: #FF3B30 !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 12px 24px rgba(255, 59, 48, 0.35) !important;
+  color: #FFFFFF !important;
+}
+
+.wp-block-button__link:active,
+.wp-element-button:active {
+  transform: translateY(-1px) scale(1) !important;
+}
+
+/* Red Accent Button */
+.wp-block-button .has-accent-background-color,
+.wp-block-button__link.has-accent-background-color,
+.wp-block-button__link[style*="#FF3B30"] {
+  background: #FF3B30 !important;
+}
+
+/* Only buttons should change on hover, not sections */
+.wp-block-button .has-accent-background-color:hover,
+.wp-block-button__link.has-accent-background-color:hover {
+  background: #0A0A0A !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+
+/* Keep accent background sections red (no hover effect) */
+.wp-block-group.has-accent-background-color {
+  background: #FF3B30 !important;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero-section,
+main > .wp-block-group:first-of-type {
+  min-height: 85vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  padding: clamp(6rem, 12vh, 8rem) clamp(2rem, 5vw, 4rem) clamp(4rem, 8vh, 6rem) !important;
+  background: #FFFFFF !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.hero-section::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -30% !important;
+  right: -10% !important;
+  width: 80% !important;
+  height: 150% !important;
+  background: radial-gradient(circle, rgba(255, 59, 48, 0.03) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+}
+
+.hero-section h1 {
+  max-width: 1200px !important;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards !important;
+}
+
+.hero-section p {
+  font-size: clamp(1.25rem, 3vw, 1.75rem) !important;
+  max-width: 720px !important;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s backwards !important;
+}
+
+.hero-section .wp-block-buttons {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.6s backwards !important;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== PORTFOLIO GRID ==================== */
+.wp-block-query,
+.wp-block-post-template,
+.portfolio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
+  gap: 3rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.wp-block-post,
+.portfolio-item {
+  background: #FFFFFF !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  cursor: pointer !important;
+}
+
+.wp-block-post:hover,
+.portfolio-item:hover {
+  transform: translateY(-12px) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12) !important;
+  border-color: rgba(255, 59, 48, 0.3) !important;
+}
+
+.wp-block-post img,
+.portfolio-item img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+.wp-block-post:hover img,
+.portfolio-item:hover img {
+  transform: scale(1.08) !important;
+}
+
+.wp-block-post-title,
+.portfolio-item h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin: 1.5rem 1.5rem 0.75rem !important;
+  padding: 0 !important;
+}
+
+.wp-block-post-excerpt,
+.portfolio-item p {
+  padding: 0 1.5rem 1.5rem !important;
+  margin: 0 !important;
+  color: #4A4A4A !important;
+}
+
+/* ==================== SERVICE CARDS ==================== */
+.service-package {
+  background: #FFFFFF !important;
+  border: 2px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 16px !important;
+  padding: 2.5rem !important;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  height: 100% !important;
+}
+
+.service-package:hover {
+  border-color: #FF3B30 !important;
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 20px 40px rgba(255, 59, 48, 0.15) !important;
+}
+
+.service-package.featured {
+  border-color: #FF3B30 !important;
+  border-width: 3px !important;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF8F7 100%) !important;
+  position: relative !important;
+}
+
+.service-package.featured::before {
+  content: "MOST POPULAR" !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: linear-gradient(135deg, #FF3B30 0%, #FF6B30 100%) !important;
+  color: #FFFFFF !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 20px !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.3) !important;
+}
+
+.service-package ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 2rem 0 !important;
+}
+
+.service-package li {
+  padding: 1rem 0 1rem 2rem !important;
+  position: relative !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease !important;
+}
+
+.service-package li:hover {
+  padding-left: 2.5rem !important;
+  background: rgba(255, 59, 48, 0.02) !important;
+}
+
+.service-package li::before {
+  content: "✓" !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 1rem !important;
+  color: #FF3B30 !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+}
+
+/* ==================== SECTIONS ==================== */
+.wp-block-group.alignfull {
+  padding: clamp(3rem, 8vw, 6rem) clamp(2rem, 5vw, 4rem) !important;
+}
+
+/* Remove gap between sections */
+main,
+main > .wp-block-group {
+  margin-bottom: 0 !important;
+}
+
+/* Ensure footer connects to previous section */
+footer.wp-block-template-part,
+footer.site-footer {
+  margin-top: 0 !important;
+  padding-top: clamp(3rem, 8vw, 6rem) !important;
+}
+
+/* Footer Quick Links */
+.site-footer .footer-links {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 0.75rem !important;
+}
+
+.site-footer .footer-links a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  display: inline-block !important;
+}
+
+.site-footer .footer-links a:hover {
+  color: #FF3B30 !important;
+  transform: translateX(4px) !important;
+}
+
+.has-grey-50-background-color,
+.has-off-white-background-color {
+  background: #FAFAFA !important;
+}
+
+.has-black-background-color,
+.has-primary-black-background-color {
+  background: #0A0A0A !important;
+  color: #FFFFFF !important;
+}
+
+.has-black-background-color *,
+.has-primary-black-background-color * {
+  color: #FFFFFF !important;
+}
+
+/* ==================== LINKS ==================== */
+a {
+  color: #FF3B30 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+a:hover {
+  color: #0A0A0A !important;
+  text-decoration: underline !important;
+}
+
+/* ==================== FOOTER ==================== */
+.site-footer {
+  background: #0A0A0A !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  padding: 4rem clamp(1.5rem, 5vw, 3rem) 2rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.site-footer a:hover {
+  color: #FF3B30 !important;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .wp-block-columns {
+    flex-direction: column !important;
+  }
+  
+  .wp-block-post-template,
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  h1 {
+    font-size: clamp(2.5rem, 15vw, 4rem) !important;
+  }
+}
+
+/* ==================== SMOOTH EVERYTHING ==================== */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth !important;
+  }
+}

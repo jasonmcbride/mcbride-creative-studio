@@ -1,0 +1,4 @@
+<?php
+// McBride Creative Theme Screenshot Placeholder
+// A screenshot.png file (1200x900px) should be added to show theme preview
+?>

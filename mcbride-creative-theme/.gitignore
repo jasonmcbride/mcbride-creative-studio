@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+/build
+/dist
+
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temp files
+*.tmp
+*.bak
+*.log
+
+# Package managers
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.local
+.env.production
