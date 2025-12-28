@@ -244,36 +244,53 @@ main > .wp-block-group:first-of-type {
 }
 
 /* ==================== PORTFOLIO GRID ==================== */
-.wp-block-query,
 .wp-block-post-template,
-.portfolio-grid {
+.portfolio-grid .wp-block-post-template {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
-  gap: 3rem !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
   margin: 0 !important;
   padding: 0 !important;
   list-style: none !important;
 }
 
+@media (max-width: 968px) {
+  .wp-block-post-template,
+  .portfolio-grid .wp-block-post-template {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .wp-block-post-template,
+  .portfolio-grid .wp-block-post-template {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .wp-block-post,
-.portfolio-item {
+.portfolio-item,
+.portfolio-card {
   background: #FFFFFF !important;
   border: 1px solid rgba(0, 0, 0, 0.08) !important;
-  border-radius: 12px !important;
+  border-radius: 16px !important;
   overflow: hidden !important;
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
   cursor: pointer !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
 }
 
 .wp-block-post:hover,
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-card:hover {
   transform: translateY(-12px) !important;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12) !important;
   border-color: rgba(139, 0, 0, 0.3) !important;
 }
 
 .wp-block-post img,
-.portfolio-item img {
+.portfolio-item img,
+.portfolio-card img {
   width: 100% !important;
   height: auto !important;
   display: block !important;
@@ -281,21 +298,26 @@ main > .wp-block-group:first-of-type {
 }
 
 .wp-block-post:hover img,
-.portfolio-item:hover img {
+.portfolio-item:hover img,
+.portfolio-card:hover img {
   transform: scale(1.08) !important;
 }
 
 .wp-block-post-title,
-.portfolio-item h3 {
+.portfolio-item h3,
+.portfolio-card h3,
+.portfolio-card .wp-block-post-title {
   font-size: 1.5rem !important;
   font-weight: 600 !important;
-  margin: 1.5rem 1.5rem 0.75rem !important;
+  margin: 0 0 0.75rem 0 !important;
   padding: 0 !important;
 }
 
 .wp-block-post-excerpt,
-.portfolio-item p {
-  padding: 0 1.5rem 1.5rem !important;
+.portfolio-item p,
+.portfolio-card p,
+.portfolio-card .wp-block-post-excerpt {
+  padding: 0 !important;
   margin: 0 !important;
   color: #4A4A4A !important;
 }
