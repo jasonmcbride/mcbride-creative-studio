@@ -264,13 +264,3 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/helpers.php';
 
-// Enqueue modern 2025 design CSS
-add_action( 'wp_enqueue_scripts', 'mcbride_creative_enqueue_modern_css', 20 );
-function mcbride_creative_enqueue_modern_css() {
-    wp_enqueue_style(
-        'mcbride-creative-modern',
-        get_template_directory_uri() . '/assets/css/modern-2025.css',
-        array( 'mcbride-creative-custom' ),
-        '1.0.0'
-    );
-}
