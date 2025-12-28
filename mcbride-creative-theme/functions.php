@@ -67,7 +67,7 @@ function mcbride_creative_enqueue_assets() {
     // Enqueue Google Fonts
     wp_enqueue_style(
         'mcbride-creative-fonts',
-        'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap',
         array(),
         null
     );
@@ -110,7 +110,7 @@ add_action( 'wp_enqueue_scripts', 'mcbride_creative_enqueue_assets' );
  */
 function mcbride_creative_editor_assets() {
     // Enqueue Google Fonts in editor
-    add_editor_style( 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap' );
+    add_editor_style( 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap' );
 
     // Enqueue custom editor styles
     add_editor_style( 'assets/css/editor.css' );
@@ -263,14 +263,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Include helper functions
  */
 require get_template_directory() . '/inc/helpers.php';
-
-// Enqueue modern 2025 design CSS
-add_action( 'wp_enqueue_scripts', 'mcbride_creative_enqueue_modern_css', 20 );
-function mcbride_creative_enqueue_modern_css() {
-    wp_enqueue_style(
-        'mcbride-creative-modern',
-        get_template_directory_uri() . '/assets/css/modern-2025.css',
-        array( 'mcbride-creative-custom' ),
-        '1.0.0'
-    );
-}
